@@ -7,20 +7,13 @@ public class Test_Challenge_008 {
         System.out.println("Enter the year");
         Scanner sc =new Scanner(System.in);
         int year=sc.nextInt();
-        if(year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    System.out.println(year + "Year is a leap year");
-                } else {
-                    System.out.println("Year is not leap");
+        if(year % 4 == 0 && year %100!=0 || year%400==0) {
+
+                    System.out.println("Year is a leap year");
                 }
-            } else {
-                System.out.println("Year is a leap year");
+             else {
+                System.out.println("Year is not  a leap year");
             }
-        }
-        else
-        {
-            System.out.println("Year is not leap");
-        }
+
     }
 }
